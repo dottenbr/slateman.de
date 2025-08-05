@@ -72,7 +72,7 @@
                     <div class="intro-cta">
                         <a href="https://www.komoot.com/de-de/collection/3220894/-slateman-hunsrueck" target="_blank" class="btn btn-komoot">
                             <img src="assets/komoot-logo.png" alt="Komoot" class="komoot-icon">
-                            Komoot Collection ansehen
+                            Komoot Collection
                         </a>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         </a>
                         <a href="https://www.komoot.com/de-de/tour/1754395577" target="_blank" class="btn btn-komoot">
                             <img src="assets/komoot-logo.png" alt="Komoot" class="komoot-icon">
-                            Komoot
+                            Komoot Tour
                         </a>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
                         </a>
                         <a href="https://www.komoot.com/de-de/tour/2003316092" target="_blank" class="btn btn-komoot">
                             <img src="assets/komoot-logo.png" alt="Komoot" class="komoot-icon">
-                            Komoot
+                            Komoot Tour
                         </a>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
                             <i class="fas fa-trophy"></i>
                         </div>
                         <h4>Gold</h4>
-                        <p>Die Elite der Finisher - noch zu vergeben</p>
+                        <p>Eine Route an einem Tag fahren</p>
                     </div>
                     
                     <div class="finisher-card">
@@ -204,7 +204,7 @@
                             <i class="fas fa-medal"></i>
                         </div>
                         <h4>Silber</h4>
-                        <p>Die erfahrenen Abenteurer - noch zu vergeben</p>
+                        <p>Eine Route an zwei Tagen fahren</p>
                     </div>
                     
                     <div class="finisher-card">
@@ -212,7 +212,45 @@
                             <i class="fas fa-award"></i>
                         </div>
                         <h4>Bronze</h4>
-                        <p>Die ersten Pioniere - noch zu vergeben</p>
+                        <p>Eine Route an drei Tagen fahren</p>
+                    </div>
+                </div>
+                
+                <div class="finishers-list">
+                    <h3>Aktuelle Finisher</h3>
+                    <div class="finishers-controls">
+                        <div class="search-container">
+                            <input type="text" id="finisher-search" placeholder="Finisher suchen..." class="search-input">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                        <div class="sort-container">
+                            <select id="finisher-sort" class="sort-select">
+                                <option value="date-desc">Datum (neueste zuerst)</option>
+                                <option value="date-asc">Datum (älteste zuerst)</option>
+                                <option value="name-asc">Name (A-Z)</option>
+                                <option value="name-desc">Name (Z-A)</option>
+                                <option value="category">Kategorie</option>
+                                <option value="route">Route</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="category-filters">
+                        <button class="category-filter active" data-category="all">Alle</button>
+                        <button class="category-filter" data-category="gold">Gold</button>
+                        <button class="category-filter" data-category="silver">Silber</button>
+                        <button class="category-filter" data-category="bronze">Bronze</button>
+                    </div>
+                    <div class="finishers-table">
+                        <div class="table-header">
+                            <div class="header-cell">Kategorie</div>
+                            <div class="header-cell">Name</div>
+                            <div class="header-cell">Datum</div>
+                            <div class="header-cell">Route</div>
+                            <div class="header-cell">Link</div>
+                        </div>
+                        <div id="finishers-container">
+                            <!-- Finisher werden hier dynamisch geladen -->
+                        </div>
                     </div>
                 </div>
                 
