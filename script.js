@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div>
                         <a href="${finisher.activityLink}" target="_blank" class="finisher-link-compact ${platformClass}">
                             ${platformIcon}
-                            ${platformText}
+                            <span class="link-text">${platformText}</span>
                         </a>
                     </div>
                 </div>
