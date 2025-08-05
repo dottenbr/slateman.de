@@ -226,7 +226,9 @@ document.addEventListener('DOMContentLoaded', function() {
     async function loadFinishers() {
         try {
             console.log('Loading finishers...');
-            const response = await fetch('finisher.json');
+            // Add cache-busting parameter to prevent caching
+            const timestamp = new Date().getTime();
+            const response = await fetch(`finisher.json?t=${timestamp}`);
             
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -240,30 +242,17 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (error) {
             console.error('Fehler beim Laden der Finisher:', error);
             
-            // Fallback: Verwende eingebettete Daten für Tests
-            console.log('Using fallback finisher data...');
-            const fallbackData = {
-                "finishers": [
-                    {
-                        "date": "2025-01-15",
-                        "category": "gold",
-                        "name": "Max Mustermann",
-                        "route": "Slateman Hunsrück-Soonwald",
-                        "activityLink": "https://www.strava.com/activities/123456789",
-                        "platform": "strava"
-                    },
-                    {
-                        "date": "2025-01-20",
-                        "category": "silver", 
-                        "name": "Anna Schmidt",
-                        "route": "Slateman Hunsrück-Hochwald",
-                        "activityLink": "https://www.komoot.com/de-de/tour/123456789",
-                        "platform": "komoot"
-                    }
-                ]
-            };
-            
-            displayFinishers(fallbackData.finishers);
+            // Show error message instead of fallback data
+            const container = document.getElementById('finishers-container');
+            if (container) {
+                container.innerHTML = `
+                    <div style="color: var(--light-text); text-align: center; grid-column: 1 / -1; padding: 2rem;">
+                        <p>Fehler beim Laden der Finisher-Daten.</p>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">Fehler: ${error.message}</p>
+                        <p style="font-size: 0.8rem; margin-top: 1rem;">Bitte überprüfe die finisher.json Datei.</p>
+                    </div>
+                `;
+            }
         }
     }
     

@@ -492,6 +492,7 @@ body {
     width: 16px;
     height: 16px;
     margin-right: 0.5rem;
+    filter: brightness(0) invert(1);
 }
 
 .btn-komoot {
@@ -823,7 +824,7 @@ body {
 .finisher-link-compact.komoot img {
     width: 12px;
     height: 12px;
-    filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%) !important;
 }
 
 .finisher-link-compact.komoot:hover img {
