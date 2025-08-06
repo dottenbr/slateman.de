@@ -1,8 +1,39 @@
+// Component Loader
+async function loadComponent(elementSelector, componentPath) {
+    try {
+        console.log(`Loading component: ${componentPath}`);
+        const response = await fetch(componentPath);
+        const html = await response.text();
+        const element = document.querySelector(elementSelector);
+        if (element) {
+            element.innerHTML = html;
+            console.log(`Component loaded successfully: ${componentPath}`);
+        } else {
+            console.warn(`Element not found for component: ${elementSelector}`);
+        }
+    } catch (error) {
+        console.error(`Failed to load component ${componentPath}:`, error);
+    }
+}
+
+// Load shared components
+async function loadSharedComponents() {
+    console.log('Loading shared components...');
+    await Promise.all([
+        loadComponent('[data-component="nav"]', 'components/nav.html'),
+        loadComponent('[data-component="footer"]', 'components/footer.html'),
+        loadComponent('[data-component="sponsoren"]', 'components/sponsoren.html')
+    ]);
+    
+    console.log('Shared components loaded successfully');
+    // Re-initialize navigation after components are loaded
+    initializeNavigation();
+}
+
 // Mobile Navigation Toggle
-document.addEventListener('DOMContentLoaded', function() {
+function initializeNavigation() {
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    const navbar = document.querySelector('.navbar');
 
     // Mobile menu toggle
     if (navToggle && navLinks) {
@@ -19,8 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+}
 
+// Main functionality initialization
+function initializeMainFunctionality() {
     // Navbar background on scroll
+    const navbar = document.querySelector('.navbar');
     if (navbar) {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 100) {
@@ -196,8 +231,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add keyboard navigation support
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
-            navLinks.classList.remove('active');
-            navToggle.classList.remove('active');
+            const navLinks = document.querySelector('.nav-links');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (navLinks && navToggle) {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
         }
     });
 
@@ -449,4 +488,12 @@ document.addEventListener('DOMContentLoaded', function() {
     loadSponsoren();
     
     console.log('Slateman Hunsrück Website loaded successfully!');
-}); 
+}
+
+document.addEventListener('DOMContentLoaded', async function() {
+    // Load shared components first
+    await loadSharedComponents();
+    
+    // Initialize the rest of the functionality after components are loaded
+    initializeMainFunctionality();
+});
