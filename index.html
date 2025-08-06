@@ -17,13 +17,16 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="assets/logo.png" alt="Slateman Hunsrück Logo" class="nav-logo-img">
-                <h2>Slateman Hunsrück</h2>
+                <a href="#home" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="assets/logo.png" alt="Slateman Hunsrück Logo" class="nav-logo-img">
+                    <h2>Slateman Hunsrück</h2>
+                </a>
             </div>
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#routes">Routen</a>
                 <a href="#finisher">Finisher</a>
+                <a href="ueber-uns.html">Über Uns</a>
                 <a href="nutzungsbestimmungen.html">Nutzungsbestimmungen</a>
                 <a href="#contact">Kontakt</a>
             </div>
@@ -233,12 +236,12 @@
                                 <option value="route">Route</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="category-filters">
-                        <button class="category-filter active" data-category="all">Alle</button>
-                        <button class="category-filter" data-category="gold">Gold</button>
-                        <button class="category-filter" data-category="silver">Silber</button>
-                        <button class="category-filter" data-category="bronze">Bronze</button>
+                        <div class="category-filters">
+                            <button class="category-filter active" data-category="all">Alle</button>
+                            <button class="category-filter" data-category="gold">Gold</button>
+                            <button class="category-filter" data-category="silver">Silber</button>
+                            <button class="category-filter" data-category="bronze">Bronze</button>
+                        </div>
                     </div>
                     <div class="finishers-table">
                         <div class="table-header">
@@ -255,7 +258,7 @@
                 </div>
                 
                 <div class="finisher-cta">
-                    <h3>Deine Chance, Erster zu sein</h3>
+                    <h3>Deine Chance, einer der Ersten zu sein</h3>
                     <p>Ob du die Tour genießen oder deine Grenzen ausloten möchtest – dies ist deine Gelegenheit, als Pionier in den Slateman Hunsrück Abenteuern zu brillieren. Zeige, was in dir steckt, und erlebe die einmalige Kombination aus Natur, Herausforderung und Erfolg.</p>
                     <a href="#contact" class="btn btn-primary">Finisher werden</a>
                 </div>
@@ -271,17 +274,19 @@
                 <div class="contact-card">
                     <h3>Finisher melden</h3>
                     <p>Hast du eine Route erfolgreich absolviert? Melde dich per WhatsApp, um in die Finisher-Liste aufgenommen zu werden.</p>
-                    <a href="https://wa.me/4916090813466" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp
-                    </a>
+                    <div class="contact-card-actions">
+                        <a href="https://wa.me/4916090813466" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="contact-card">
                     <h3>Fragen & Support</h3>
                     <p>Du hast noch Fragen? Dann nimm Kontakt zu uns auf, wir helfen dir gerne weiter. Schreib uns eine E-Mail oder nimm Kontakt per WhatsApp auf.</p>
-                    <div class="contact-links">
-                        <a href="mailto:dottenbr@me.com" class="btn btn-outline">
+                    <div class="contact-links contact-card-actions">
+                        <a href="mailto:dom@devilsrock.de" class="btn btn-outline">
                             <i class="fas fa-envelope"></i>
                             E-Mail
                         </a>
@@ -289,6 +294,30 @@
                             <i class="fab fa-whatsapp"></i>
                             WhatsApp
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsoren Section -->
+    <section class="sponsoren-section">
+        <div class="container">
+            <h2>Sponsoren & Unterstützer</h2>
+            <p class="section-intro">Wir danken unseren Sponsoren und Unterstützern, die das Slateman Hunsrück Projekt ermöglichen.</p>
+            
+            <div class="sponsoren-container">
+                <div class="sponsoren-category">
+                    <h3><i class="fas fa-star"></i> Sponsoren</h3>
+                    <div id="sponsoren-grid" class="sponsoren-grid">
+                        <!-- Sponsoren werden hier dynamisch geladen -->
+                    </div>
+                </div>
+                
+                <div class="sponsoren-category">
+                    <h3><i class="fas fa-heart"></i> Unterstützer</h3>
+                    <div id="unterstuetzer-grid" class="sponsoren-grid">
+                        <!-- Unterstützer werden hier dynamisch geladen -->
                     </div>
                 </div>
             </div>
@@ -312,7 +341,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Slateman Hunsrück. <a href="nutzungsbestimmungen.html" style="color: #bdc3c7; text-decoration: none;">Nutzungsbestimmungen</a></p>
-                <p style="font-size: 0.8em; color: #95a5a6; margin-top: 0.5em;">Impressum: Dominik Ottenbreit, Wiesenweg 15, 55606 Bruschied | dottenbr@me.com | +49 160 90813466</p>
+                <p style="font-size: 0.8em; color: #95a5a6; margin-top: 0.5em;">Impressum: Dominik Ottenbreit, Wiesenweg 15, 55606 Bruschied | dom@devilsrock.de | +49 160 90813466</p>
             </div>
         </div>
     </footer>

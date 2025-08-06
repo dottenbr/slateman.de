@@ -1,0 +1,21 @@
+{
+  "sponsoren": [
+    {
+      "name": "Newmatik GmbH",
+      "website": "https://www.newmatik.com",
+      "logo": "assets/sponsoren/newmatik.png"
+    },
+    {
+      "name": "Ottenbreit Bau GmbH",
+      "website": "https://www.ottenbreit-bau.com",
+      "logo": "assets/sponsoren/ottenbreit-bau.png"
+    }
+  ],
+  "unterstuetzer": [
+    {
+      "name": "Devils Rock Trails",
+      "website": "https://www.devilsrock.de",
+      "logo": "assets/sponsoren/devils-rock-trails.png"
+    }
+  ]
+} 
