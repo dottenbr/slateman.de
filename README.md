@@ -1,124 +1,90 @@
-# Slateman Hunsrück - Landing Page
+# Slateman Hunsrück
 
-Eine moderne, responsive Landing Page für die Slateman Hunsrück Mountainbike-Routen im Hunsrück, Rheinland-Pfalz.
+Mountainbike-Abenteuer im Hunsrück mit zwei einzigartigen Routen und einem Finisher-System.
 
 ## 🚀 Features
 
-- **Modernes Design**: Sauberes, responsives Design mit modernen Webtechnologien
-- **Mobile-First**: Optimiert für alle Geräte (Desktop, Tablet, Smartphone)
-- **Performance**: Schnelle Ladezeiten durch optimierte Assets
-- **Accessibility**: Barrierefreie Gestaltung mit Keyboard-Navigation
-- **SEO-Optimiert**: Meta-Tags und strukturierte Daten für bessere Suchmaschinen-Auffindbarkeit
+- **Zwei Routen**: Soonwald (213 km) und Hochwald (195 km)
+- **Kostenlose GPX-Downloads**: Alle Routen kostenlos verfügbar
+- **Finisher-System**: Gold, Silber, Bronze Kategorien
+- **Responsive Design**: Optimiert für alle Geräte
+- **Moderne UI**: Dunkles Design mit Animationen
 
-## 📱 Technologien
+## 📁 Projektstruktur
 
-- **HTML5**: Semantische Struktur
-- **CSS3**: Moderne Styling mit CSS Grid, Flexbox und Custom Properties
-- **JavaScript**: Interaktive Features und mobile Navigation
-- **Font Awesome**: Icons für bessere Benutzererfahrung
-- **Google Fonts**: Inter Font für moderne Typografie
-
-## 🏗️ Projektstruktur
-
-```
+```text
 slateman.de/
-├── index.html          # Haupt-HTML-Datei
-├── styles.css          # CSS-Styles
-├── script.js           # JavaScript-Funktionalität
-├── nutzungsbestimmungen.html  # Nutzungsbestimmungen
-└── README.md           # Diese Datei
+├── assets/               # Bilder, GPX-Dateien
+├── components/           # HTML-Komponenten
+├── css/                  # Stylesheets
+│   ├── base.css          # Reset, Variablen, Buttons
+│   ├── components.css    # Navigation, Cards
+│   ├── layout.css        # Grid-Layouts, Sektionen
+│   └── pages.css         # Seiten-spezifische Styles
+├── data/                 # JSON-Daten
+├── js/                   # JavaScript-Module
+│   ├── components.js     # Komponenten-Loader
+│   ├── ui.js             # UI-Interaktionen
+│   ├── finishers.js      # Finisher-Funktionalität
+│   ├── sponsors.js       # Sponsor-Funktionalität
+│   └── main.js           # Haupt-Initialisierung
+├── pages/                # Inhaltsseiten
+├── index.html            # Hauptseite
+└── README.md             # Diese Datei
 ```
 
-## 🌐 GitHub Pages Hosting
+## 🛠️ Technologien
 
-### Automatisches Deployment
+- **HTML5**: Semantisches Markup
+- **CSS3**: CSS-Variablen, Flexbox/Grid
+- **Vanilla JavaScript**: Modulare Architektur
+- **Responsive Design**: Mobile-First
 
-1. **Repository erstellen**: Erstelle ein neues GitHub Repository namens `slateman.de`
-2. **Dateien hochladen**: Lade alle Projektdateien in das Repository hoch
-3. **GitHub Pages aktivieren**:
-   - Gehe zu Repository Settings
-   - Scrolle zu "Pages" im linken Menü
-   - Wähle "Deploy from a branch" aus
-   - Wähle "main" Branch und "/ (root)" Ordner
-   - Klicke "Save"
-4. **Custom Domain konfigurieren**:
-   - Die `CNAME` Datei ist bereits erstellt
-   - Konfiguriere DNS-Einstellungen bei deinem Domain-Provider
-   - GitHub Pages erkennt automatisch die Domain `slateman.de`
-
-### Manuelles Deployment
+## 🚀 Installation
 
 ```bash
-# Repository klonen
-git clone https://github.com/yourusername/slateman.de.git
+git clone https://github.com/dottenbr/slateman.de.git
 cd slateman.de
-
-# Dateien hinzufügen
-git add .
-git commit -m "Initial commit: Slateman Hunsrück Landing Page"
-git push origin main
+python3 -m http.server 8000
+# Öffne http://localhost:8000
 ```
 
-## 📋 Inhalt
+## 🎨 Design
 
-Die Website enthält alle wichtigen Informationen über die Slateman Hunsrück Mountainbike-Routen:
-
-- **Route-Informationen**: Zwei einzigartige Routen (Soonwald und Hochwald) mit detaillierten Beschreibungen
-- **Finisher-System**: Gold, Silber und Bronze Kategorien für erfolgreiche Absolventen
-- **Kostenlose GPX-Files**: Download-Links für beide Routen
-- **WhatsApp-Kontakt**: Direkte Kommunikation für Finisher-Meldungen und Support
-- **Nutzungsbestimmungen**: Wichtige Regeln und Sicherheitshinweise
-
-## 🎨 Design-Features
-
-- **Responsive Grid-Layout**: Automatische Anpassung an verschiedene Bildschirmgrößen
-- **Smooth Animations**: Sanfte Übergänge und Hover-Effekte
-- **Modern Color Scheme**: Lila-Purpur Farbpalette passend zum Mountainbike-Abenteuer
-- **Card-based Layout**: Übersichtliche Darstellung der Routen und Finisher-Kategorien
-- **Fixed Navigation**: Immer sichtbare Navigation mit Blur-Effekt
-
-## 🔧 Anpassungen
-
-### Farben ändern
-
-Die Hauptfarben können in der `styles.css` Datei angepasst werden:
-
-```css
-:root {
-    --primary-color: #8b5cf6;    /* Hauptfarbe */
-    --secondary-color: #1e1b4b;  /* Sekundärfarbe */
-    --accent-color: #a855f7;     /* Akzentfarbe */
-}
-```
-
-### Inhalte bearbeiten
-
-Alle Inhalte können direkt in der `index.html` Datei bearbeitet werden. Die Struktur ist semantisch aufgebaut und leicht zu verstehen.
+- **Dunkles Theme**: Moderne, augenschonende Darstellung
+- **Purple Gradient**: Primärfarbe #8b5cf6
+- **Smooth Animations**: Sanfte Übergänge
+- **Mobile-First**: Responsive für alle Geräte
 
 ## 🏆 Finisher-System
 
-Das Finisher-System ist ein zentrales Feature der Website:
-
-- **Gold**: Die Elite der Finisher
-- **Silber**: Die erfahrenen Abenteurer  
-- **Bronze**: Die ersten Pioniere
-
-Finisher melden sich per WhatsApp (+49 160 90813466) um gelistet zu werden.
+- **Gold**: Eine Route an einem Tag
+- **Gold**: Eine Route an zwei Tagen  
+- **Bronze**: Eine Route an drei Tagen
 
 ## 🗺️ Routen
 
 ### Route 1: Slateman Hunsrück-Soonwald
+
 - **Distanz**: 213 km
 - **Höhenmeter**: 3.690 m
-- **Highlights**: Burgruine Schmidtburg, Geierlay Hängebrücke, Devils Rock Trail
+- **Highlights**: Burgruine Schmidtburg, Geierlay Hängebrücke
 
 ### Route 2: Slateman Hunsrück-Hochwald
+
 - **Distanz**: 195 km
 - **Höhenmeter**: 3.590 m
-- **Highlights**: Nationalpark Hunsrück-Hochwald, Erbeskopf, Bikearena Hattgenstein
+- **Highlights**: Nationalpark Hunsrück-Hochwald, Erbeskopf
+
+## 📄 Lizenz
+
+Nicht-kommerziell ausgerichtet - alle Touren kostenlos verfügbar.
+
+## 🤝 Kontakt
+
+- **Website**: [slateman.de](https://slateman.de)
+- **Email**: [dom@devilsrock.de](mailto:dom@devilsrock.de)
 
 ---
 
-**Slateman Hunsrück** - Mountainbike Abenteuer im Hunsrück, Rheinland-Pfalz
-
-*Erstellt mit ❤️ für die Mountainbike Community* 
+Entwickelt mit ❤️ für die Mountainbike-Community im Hunsrück

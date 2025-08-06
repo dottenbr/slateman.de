@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über Uns - Slateman Hunsrück</title>
     <meta name="description" content="Erfahre mehr über das Slateman Hunsrück Projekt, unsere Vision und Partnerschaften für die Entwicklung der Region als deutschen Spitzenstandort für Mehrtagestouren.">
-    <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +17,25 @@
 </head>
 <body>
     <!-- Navigation component will be loaded here -->
-    <div data-component="nav"></div>
+            <div data-component="nav"></div>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Override component paths for pages in subdirectory
+        async function loadSharedComponents() {
+            console.log('Loading shared components for pages...');
+            await Promise.all([
+                loadComponent('[data-component="nav"]', '../components/nav.html'),
+                loadComponent('[data-component="footer"]', '../components/footer.html'),
+                loadComponent('[data-component="sponsoren"]', '../components/sponsoren.html')
+            ]);
+            
+            console.log('Shared components loaded successfully for pages');
+            initializeNavigation();
+        }
+    </script>
 
     <!-- Page Header -->
     <section class="page-header">

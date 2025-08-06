@@ -1,0 +1,89 @@
+{
+  "version": "0.2",
+  "language": "en,de",
+  "dictionaries": [
+    "en_US",
+    "de_DE",
+    "de-at",
+    "de-ch",
+    "german",
+    "html",
+    "css",
+    "javascript",
+    "node",
+    "npm",
+    "filetypes"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": "./cspell-dict-project-words.txt",
+      "description": "Words used in this project"
+    }
+  ],
+  "words": [
+    "slateman",
+    "hunsrück",
+    "soonwald",
+    "hochwald",
+    "schmidtburg",
+    "komoot",
+    "sponsoren",
+    "nutzungsbestimmungen",
+    "ueber",
+    "finisher",
+    "finishers",
+    "downhill",
+    "trail",
+    "trails",
+    "devils",
+    "rock",
+    "newmatik",
+    "ottenbreit",
+    "bau",
+    "gpx",
+    "webp"
+  ],
+  "ignoreWords": [],
+  "patterns": [
+    {
+      "name": "HTML Attributes",
+      "pattern": "\\b(?:class|id|href|src|alt|title|data-[a-zA-Z-]+)\\b",
+      "description": "HTML attributes"
+    },
+    {
+      "name": "CSS Properties",
+      "pattern": "\\b(?:background|color|font|margin|padding|border|width|height|display|position|top|left|right|bottom|z-index|opacity|transform|transition|animation)\\b",
+      "description": "CSS properties"
+    },
+    {
+      "name": "JavaScript Keywords",
+      "pattern": "\\b(?:const|let|var|function|return|if|else|for|while|switch|case|break|continue|try|catch|finally|throw|new|this|super|class|extends|import|export|default|async|await|yield|typeof|instanceof|delete|void|in|of|with|debugger)\\b",
+      "description": "JavaScript keywords"
+    },
+    {
+      "name": "File Extensions",
+      "pattern": "\\.(?:html|css|js|json|png|jpg|jpeg|gif|svg|webp|gpx|ico|woff|woff2|ttf|eot)$",
+      "description": "File extensions"
+    }
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    ".git/**",
+    "*.min.js",
+    "*.min.css",
+    "*.bundle.js",
+    "dist/**",
+    "build/**",
+    ".DS_Store"
+  ],
+  "allowCompoundWords": true,
+  "caseSensitive": false,
+  "maxNumberOfProblems": 1000,
+  "minWordLength": 3,
+  "ignoreRegExpList": [
+    "/\\b[A-Z]{2,}\\b/g",
+    "/\\b\\d+\\b/g",
+    "/\\b0x[a-fA-F0-9]+\\b/g"
+  ]
+} 
