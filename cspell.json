@@ -1,26 +1,6 @@
 {
   "version": "0.2",
   "language": "en,de",
-  "dictionaries": [
-    "en_US",
-    "de_DE",
-    "de-at",
-    "de-ch",
-    "german",
-    "html",
-    "css",
-    "javascript",
-    "node",
-    "npm",
-    "filetypes"
-  ],
-  "dictionaryDefinitions": [
-    {
-      "name": "project-words",
-      "path": "./cspell-dict-project-words.txt",
-      "description": "Words used in this project"
-    }
-  ],
   "words": [
     "slateman",
     "hunsrück",
