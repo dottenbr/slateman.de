@@ -28,6 +28,7 @@ async function loadSharedComponents() {
     console.log('Shared components loaded successfully');
     // Re-initialize navigation after components are loaded
     initializeNavigation();
+    initializeSponsors();
 }
 
 // Mobile Navigation Toggle

@@ -1,10 +1,10 @@
 // Sponsors functionality
 
 // Sponsoren laden
-async function loadSponsoren() {
+async function loadSponsoren(basePath = '.') {
     try {
         console.log('Loading sponsors...');
-        const response = await fetch('data/sponsoren.json');
+        const response = await fetch(`${basePath}/data/sponsoren.json`);
         const data = await response.json();
         console.log('Sponsor data:', data);
         
@@ -14,7 +14,7 @@ async function loadSponsoren() {
         if (sponsorenGrid && data.sponsoren) {
             const sponsorHTML = data.sponsoren.map(sponsor => `
                 <a href="${sponsor.website}" target="_blank" title="${sponsor.name}">
-                    <img src="${sponsor.logo}" alt="${sponsor.name} Logo" class="sponsor-logo" loading="lazy">
+                    <img src="${basePath}/${sponsor.logo}" alt="${sponsor.name} Logo" class="sponsor-logo" loading="lazy">
                 </a>
             `).join('');
             console.log('Sponsor HTML:', sponsorHTML);
@@ -27,7 +27,7 @@ async function loadSponsoren() {
         if (unterstuetzerGrid && data.unterstuetzer) {
             const unterstuetzerHTML = data.unterstuetzer.map(unterstuetzer => `
                 <a href="${unterstuetzer.website}" target="_blank" title="${unterstuetzer.name}">
-                    <img src="${unterstuetzer.logo}" alt="${unterstuetzer.name} Logo" class="sponsor-logo" loading="lazy">
+                    <img src="${basePath}/${unterstuetzer.logo}" alt="${unterstuetzer.name} Logo" class="sponsor-logo" loading="lazy">
                 </a>
             `).join('');
             console.log('Unterstuetzer HTML:', unterstuetzerHTML);
@@ -39,8 +39,8 @@ async function loadSponsoren() {
 }
 
 // Initialize sponsors functionality
-function initializeSponsors() {
-    loadSponsoren();
+function initializeSponsors(basePath = '.') {
+    loadSponsoren(basePath);
 }
 
 // Export function for use in other modules

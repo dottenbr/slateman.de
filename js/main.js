@@ -6,9 +6,6 @@ function initializeMainFunctionality() {
     // Initialize finishers functionality
     initializeFinishers();
     
-    // Initialize sponsors functionality
-    initializeSponsors();
-    
     console.log('Slateman Hunsrück Website loaded successfully!');
 }
 
