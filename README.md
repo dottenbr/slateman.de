@@ -4,7 +4,7 @@ Mountainbike-Abenteuer im Hunsrück mit zwei einzigartigen Routen und einem Fini
 
 ## 🚀 Features
 
-- **Zwei Routen**: Soonwald (213 km) und Hochwald (195 km)
+- **Zwei Routen**: Soonwald (213 km) und Hochwald (199 km)
 - **Kostenlose GPX-Downloads**: Alle Routen kostenlos verfügbar
 - **Finisher-System**: Gold, Silber, Bronze Kategorien
 - **Responsive Design**: Optimiert für alle Geräte
@@ -72,8 +72,8 @@ python3 -m http.server 8000
 
 ### Route 2: Slateman Hunsrück-Hochwald
 
-- **Distanz**: 195 km
-- **Höhenmeter**: 3.590 m
+- **Distanz**: 199 km
+- **Höhenmeter**: 3.680 m
 - **Highlights**: Nationalpark Hunsrück-Hochwald, Erbeskopf
 
 ## 📄 Lizenz
