@@ -4,7 +4,7 @@ Mountainbike-Abenteuer im Hunsrück mit zwei einzigartigen Routen und einem Fini
 
 ## 🚀 Features
 
-- **Zwei Routen**: Soonwald (213 km) und Hochwald (199 km)
+- **Zwei Routen**: Soonwald (240 km) und Hochwald (199 km)
 - **Kostenlose GPX-Downloads**: Alle Routen kostenlos verfügbar
 - **Finisher-System**: Gold, Silber, Bronze Kategorien
 - **Responsive Design**: Optimiert für alle Geräte
@@ -66,8 +66,8 @@ python3 -m http.server 8000
 
 ### Route 1: Slateman Hunsrück-Soonwald
 
-- **Distanz**: 213 km
-- **Höhenmeter**: 3.690 m
+- **Distanz**: 240 km
+- **Höhenmeter**: 4.290 m
 - **Highlights**: Burgruine Schmidtburg, Geierlay Hängebrücke
 
 ### Route 2: Slateman Hunsrück-Hochwald
