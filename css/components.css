@@ -164,6 +164,41 @@
     text-align: center;
 }
 
+/* Quick Facts Section */
+.quick-facts {
+    background: rgba(139, 92, 246, 0.05);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.quick-facts h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.fact-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.fact-item strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
 .intro-highlights {
     display: flex;
     justify-content: center;

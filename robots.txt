@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://slateman.de/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+

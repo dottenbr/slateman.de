@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://slateman.de/</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Page -->
+    <url>
+        <loc>https://slateman.de/pages/ueber-uns.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Terms of Use -->
+    <url>
+        <loc>https://slateman.de/pages/nutzungsbestimmungen.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Route: Soonwald -->
+    <url>
+        <loc>https://slateman.de/pages/route-soonwald.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Route: Hochwald -->
+    <url>
+        <loc>https://slateman.de/pages/route-hochwald.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- FAQ -->
+    <url>
+        <loc>https://slateman.de/pages/faq.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Preparation & Equipment -->
+    <url>
+        <loc>https://slateman.de/pages/vorbereitung.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Accommodation & Food -->
+    <url>
+        <loc>https://slateman.de/pages/unterkunft-verpflegung.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Attractions & Culture -->
+    <url>
+        <loc>https://slateman.de/pages/sehenswuerdigkeiten.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Trail Conditions & Weather -->
+    <url>
+        <loc>https://slateman.de/pages/trail-bedingungen.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Comparison -->
+    <url>
+        <loc>https://slateman.de/pages/vergleich.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Trip Reports -->
+    <url>
+        <loc>https://slateman.de/pages/erfahrungsberichte.html</loc>
+        <lastmod>2025-10-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
+
