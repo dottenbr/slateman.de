@@ -59,7 +59,7 @@ python3 -m http.server 8000
 ## 🏆 Finisher-System
 
 - **Gold**: Eine Route an einem Tag
-- **Gold**: Eine Route an zwei Tagen  
+- **Silber**: Eine Route an zwei Tagen
 - **Bronze**: Eine Route an drei Tagen
 
 ## 🗺️ Routen

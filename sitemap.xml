@@ -28,22 +28,6 @@
         <priority>0.6</priority>
     </url>
 
-    <!-- Route: Soonwald -->
-    <url>
-        <loc>https://slateman.de/pages/route-soonwald.html</loc>
-        <lastmod>2025-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Route: Hochwald -->
-    <url>
-        <loc>https://slateman.de/pages/route-hochwald.html</loc>
-        <lastmod>2025-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
     <!-- FAQ -->
     <url>
         <loc>https://slateman.de/pages/faq.html</loc>
@@ -60,43 +44,11 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Accommodation & Food -->
-    <url>
-        <loc>https://slateman.de/pages/unterkunft-verpflegung.html</loc>
-        <lastmod>2025-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Attractions & Culture -->
-    <url>
-        <loc>https://slateman.de/pages/sehenswuerdigkeiten.html</loc>
-        <lastmod>2025-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Trail Conditions & Weather -->
-    <url>
-        <loc>https://slateman.de/pages/trail-bedingungen.html</loc>
-        <lastmod>2025-10-14</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
     <!-- Comparison -->
     <url>
         <loc>https://slateman.de/pages/vergleich.html</loc>
         <lastmod>2025-10-14</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Trip Reports -->
-    <url>
-        <loc>https://slateman.de/pages/erfahrungsberichte.html</loc>
-        <lastmod>2025-10-14</lastmod>
-        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 
